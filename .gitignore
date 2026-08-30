@@ -20,3 +20,5 @@ checkpoints/*
 secrets.yaml
 *.key
 *.pem
+test_image.png
+test_image.png
