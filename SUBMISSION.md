@@ -118,3 +118,41 @@ The detailed 300-500 word reflection is available in:
 
 `REFLECTION.md`
 
+## Final Submission Checklist
+
+The following items are included in the repository for final submission:
+
+- Public GitHub repository
+- PyTorch CIFAR-10 training pipeline
+- ResNet-18 model implementation
+- YAML-based training configuration
+- JSON metric logging
+- Early stopping
+- Model checkpoint generation
+- Docker training image
+- Docker serving image
+- FastAPI `/health` endpoint
+- FastAPI `/predict` endpoint
+- Kubernetes namespace
+- Kubernetes ConfigMap
+- PersistentVolumeClaim
+- Kubernetes training Job
+- Two-replica serving Deployment
+- Liveness and readiness probes
+- CPU and memory requests/limits
+- ClusterIP Service
+- Horizontal Pod Autoscaler
+- Unit testing with pytest
+- GitHub Actions CI
+- README with architecture and setup instructions
+- 300-500 word reflection
+- End-to-end validation evidence
+
+## Submission Links
+
+Repository:
+https://github.com/da25m564/mlops-pytorch-pipeline
+
+Final Pull Request:
+To be added after the final develop-to-main merge.
+
