@@ -101,3 +101,27 @@ Use `develop` as the integration branch. Create feature branches from `develop`,
 ## Evidence to capture
 
 Include screenshots or terminal output for successful Docker builds/runs, training checkpoint creation, `/health`, `/predict`, Kubernetes Job completion/logs, serving pods, Deployment description, Service/HPA status, and port-forward prediction.
+
+## Validation Results
+
+### Unit Testing
+- ResNet18 output-shape test passed successfully.
+
+### Docker
+- Training image: `mlops-train:v1`
+- Serving image: `mlops-serve:v1`
+- `/health` returned `model_loaded=true`
+- `/predict` returned CIFAR-10 class probabilities.
+
+### Kubernetes Training
+- Training Job completed successfully.
+- Checkpoint saved to `/app/checkpoints/classifier_v1.pt`
+- Best validation loss: `0.3973`
+- Final validation accuracy: `0.8709`
+
+### Kubernetes Serving
+- Two model-serving replicas running.
+- ClusterIP Service configured on port 80.
+- Liveness and readiness probes enabled.
+- HPA configured.
+- `/health` and `/predict` validated through port forwarding.
