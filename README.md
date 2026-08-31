@@ -1,3 +1,39 @@
+## Submission Information
+
+**Student Name:** Ganesan SP  
+**Roll No:** DA25M564  
+
+**GitHub Repository:**  
+https://github.com/da25m564/mlops-pytorch-pipeline
+
+**Final Implementation Pull Request:**  
+https://github.com/da25m564/mlops-pytorch-pipeline/pull/3
+
+**Project:**  
+Deploying PyTorch ML Workloads with Docker & Kubernetes
+
+### Final Validation
+
+The complete MLOps pipeline was successfully validated with:
+
+- PyTorch CIFAR-10 training using ResNet-18
+- YAML-based training configuration
+- Model checkpoint generation and persistent storage
+- Dockerized training and FastAPI model serving
+- Successful `/health` and `/predict` endpoint validation
+- Kubernetes training Job completion
+- Two model-serving replicas running successfully
+- Liveness and readiness probes
+- ClusterIP Service
+- Horizontal Pod Autoscaler (HPA)
+- Unit testing with pytest
+- GitHub Actions CI
+- End-to-end Kubernetes serving validation
+
+Detailed project reflection is available in [`REFLECTION.md`](REFLECTION.md).
+
+
+
 # MLOps PyTorch Pipeline
 
 End-to-end CIFAR-10 image classification pipeline covering Git workflow, PyTorch training, Docker containerization, Kubernetes training Jobs, and scalable FastAPI model serving.
